@@ -63,6 +63,7 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pgrGlobal = new System.Windows.Forms.ProgressBar();
             this.lblTimer = new System.Windows.Forms.Label();
+            this.lblGlobal = new System.Windows.Forms.Label();
             this.gbxProcesos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -287,6 +288,7 @@
             // 
             // pbr7
             // 
+            this.pbr7.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pbr7.Location = new System.Drawing.Point(135, 480);
             this.pbr7.Name = "pbr7";
             this.pbr7.Size = new System.Drawing.Size(810, 43);
@@ -295,6 +297,7 @@
             // 
             // pbr6
             // 
+            this.pbr6.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pbr6.Location = new System.Drawing.Point(135, 406);
             this.pbr6.Name = "pbr6";
             this.pbr6.Size = new System.Drawing.Size(810, 43);
@@ -303,6 +306,7 @@
             // 
             // pbr5
             // 
+            this.pbr5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pbr5.Location = new System.Drawing.Point(135, 330);
             this.pbr5.Name = "pbr5";
             this.pbr5.Size = new System.Drawing.Size(810, 43);
@@ -311,6 +315,7 @@
             // 
             // pbr4
             // 
+            this.pbr4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pbr4.Location = new System.Drawing.Point(135, 255);
             this.pbr4.Name = "pbr4";
             this.pbr4.Size = new System.Drawing.Size(810, 43);
@@ -319,6 +324,7 @@
             // 
             // pbr3
             // 
+            this.pbr3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pbr3.Location = new System.Drawing.Point(135, 181);
             this.pbr3.Name = "pbr3";
             this.pbr3.Size = new System.Drawing.Size(810, 43);
@@ -327,6 +333,7 @@
             // 
             // pbr2
             // 
+            this.pbr2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pbr2.Location = new System.Drawing.Point(135, 111);
             this.pbr2.Name = "pbr2";
             this.pbr2.Size = new System.Drawing.Size(810, 43);
@@ -335,6 +342,8 @@
             // 
             // pbr1
             // 
+            this.pbr1.BackColor = System.Drawing.SystemColors.Control;
+            this.pbr1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pbr1.Enabled = false;
             this.pbr1.Location = new System.Drawing.Point(135, 36);
             this.pbr1.Name = "pbr1";
@@ -397,11 +406,23 @@
             this.lblTimer.Text = "00:00";
             this.lblTimer.Visible = false;
             // 
+            // lblGlobal
+            // 
+            this.lblGlobal.AutoSize = true;
+            this.lblGlobal.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGlobal.Location = new System.Drawing.Point(295, 597);
+            this.lblGlobal.Name = "lblGlobal";
+            this.lblGlobal.Size = new System.Drawing.Size(114, 28);
+            this.lblGlobal.TabIndex = 17;
+            this.lblGlobal.Text = "Cola Global";
+            this.lblGlobal.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 652);
+            this.Controls.Add(this.lblGlobal);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.pgrGlobal);
             this.Controls.Add(this.gbxProcesos);
@@ -464,5 +485,6 @@
         private System.Windows.Forms.Timer timer;
         private ProgressBar pgrGlobal;
         private Label lblTimer;
+        private Label lblGlobal;
     }
 }
